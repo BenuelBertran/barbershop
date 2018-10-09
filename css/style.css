@@ -19,6 +19,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.inner-page {
+    background-color: #f8f5f2;
+    background-image: url(../img/shop-background.jpg);
+}
+
 a {
     text-decoration: none;
 }
@@ -26,6 +31,17 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.title {
+    margin: 0;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
 }
 
 .button {
@@ -74,18 +90,57 @@ img {
 /* Header */
 
 
-.main-navigation {
-    font-size: 16px;
-    line-height: 20px;
-
+.main-header {
     background-color: #000000;
 }
 
-.main-navigation .current {
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-navigation__logo {
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px 25px;
+}
+
+.main-navigation .menu {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 650px;
+}
+
+.main-navigation .user {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+    width: 140px;
+}
+
+.main-navigation__link {
+    display: block;
+    
+    padding: 27px 20px 25px;
+    
+    color: #ffffff;
+}
+
+.main-navigation__link:hover,
+.main-navigation__link:focus {
+    background-color: #242424;
+}
+
+.main-navigation .menu__link--current {
     position: relative;
 }
 
-.main-navigation .current::before {
+.main-navigation .menu__link--current::before {
     position: absolute;
     content: "";
     left: 20px;
@@ -96,61 +151,12 @@ img {
     background-color: #ffffff;
 }
 
-.navigation-wrapper {
-    display: flex;
-    justify-content: space-between;
-    
-    background-color: #000000;
-}
-
-.header-logo {
-    width: 111px;
-    height: 24px;
-    padding: 23px 20px 25px;
-}
-
-.main-navigation .menu,
-.main-navigation .user {
-    margin: 0;
-    padding: 0;
-    
-    list-style: none;
-}
-
-.main-navigation .menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 650px;
-}
-
-.main-navigation .user {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 140px;
-}
-
-.main-navigation .menu a,
-.main-navigation .user a {
-    display: block;
-    padding: 27px 20px 25px;
-    
-    color: #ffffff;
-}
-
-.main-navigation .menu a:hover,
-.main-navigation .menu a:focus,
-.main-navigation .user a:hover,
-.main-navigation .user a:focus {
-    background-color: #242424;
-}
-
-.main-navigation a.user-link {
+.main-navigation .user__link {
     position: relative;
     padding-left: 45px;
 }
 
-.main-navigation a.user-link::before {
+.main-navigation .user__link::before {
     content: "";
     position: absolute;
     top: 27px; 
@@ -165,23 +171,14 @@ img {
     background-position: 0 0;
 }
 
-.main-navigation a.user-link:hover::before,
-.main-navigation a.user-link:focus::before,
-.main-navigation a.user-link:active::before {
+.main-navigation .user__link:hover::before,
+.main-navigation .user__link:focus::before {
     opacity: 1;
 }
 
 
 /* Main */
 
-
-.inner-page {
-    background-color: #f8f5f2;
-    background-image: url(../img/shop-background.jpg);
-    background-position: 0 0;
-    background-repeat: repeat;
-    
-}
 
 .inner-page main {
     color: #000000;
@@ -532,39 +529,38 @@ img {
 }
 
 
-/* ---------- [Main Page] ---------- */
+/* ---------- [Index Page] ---------- */
 
 
-.logo-wrapper {
+.index-header {
+    margin-bottom: 60px;    
+}
+
+.index-page__logo {
+    display: block;
     width: 371px;
     height: 155px;
     
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 73px;
 }
 
-.main-page h2 {
-    font-size: 30px;
-    line-height: 42px;
-}
-
 .features {
     margin-bottom: 75px;
-    
 }
 
-.features-list {
+.features__list {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    
     margin: 0;
     padding: 0;
     
     list-style: none;
 }
 
-.feature-item {
+.features__item {
     width: 300px;
     
     text-align: center;
@@ -572,7 +568,6 @@ img {
 
 .features h3 {
     position: relative;
-    margin: 0;
     padding-bottom: 58px; 
     font-size: 30px;
     line-height: 42px;
@@ -622,6 +617,11 @@ img {
 
 .news {
     width: 380px;
+}
+
+.index-page h2 {
+    font-size: 30px;
+    line-height: 42px;
 }
 
 .news-list {
