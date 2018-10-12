@@ -35,6 +35,8 @@ img {
 
 .title {
     margin: 0;
+    
+    word-break: break-word;
 }
 
 .list {
@@ -46,6 +48,8 @@ img {
 
 .paragraph {
     margin: 0;
+    
+    word-break: break-word;
 }
 
 .button {
@@ -56,6 +60,7 @@ img {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    word-break: break-word;
     
     background-color: #000000;
 
@@ -130,6 +135,7 @@ img {
     padding: 27px 20px 25px;
     
     color: #ffffff;
+    word-break: break-word;
 }
 
 .main-navigation__link:hover,
@@ -137,11 +143,11 @@ img {
     background-color: #242424;
 }
 
-.main-navigation .menu__link--current {
+.main-navigation__link--current {
     position: relative;
 }
 
-.main-navigation .menu__link--current::before {
+.main-navigation__link--current::before {
     position: absolute;
     content: "";
     left: 20px;
@@ -155,6 +161,7 @@ img {
 
 .main-navigation .user__link {
     position: relative;
+    
     padding-left: 45px;
 }
 
@@ -316,7 +323,7 @@ img {
     background-position: 50% 50%;
 }
 
-.footer-copyright {
+.main-footer .copyright {
     width: 140px;
 }
 
