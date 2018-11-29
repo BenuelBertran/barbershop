@@ -15,5 +15,5 @@
         url("../fonts/pt_sans-narrow-bold-700.woff") format("woff"),
         url("../fonts/pt_sans-narrow-bold-700.woff2") format("woff2");
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }

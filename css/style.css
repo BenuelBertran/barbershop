@@ -3,8 +3,6 @@
 
 body {
     min-width: 960px;
-    margin: 0;
-    padding: 0;
     
     font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
     font-size: 14px;
@@ -13,7 +11,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     
-    background-color: #242424;
+    background-color: #070707;
     background-image: url(../img/index-background.jpg);
     background-position: center  40px;
     background-repeat: no-repeat;
@@ -231,7 +229,7 @@ img {
 
 
 .page-footer {  
-    background-color: #232323;
+    background-color: #070707;
     background-image: url(../img/footer-background.jpg);
 }
 
