@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Магазин</title>
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="inner-page">
+        <header class="page-header">
+            <nav class="main-navigation container"> 
+                <a class="main-navigation__logo" href="index.html">
+                    <img src="img/main-navigation-logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+                </a>
+                <ul class="list menu">
+                    <li>
+                        <a class="main-navigation__link" href="info.html">Информация</a>
+                    </li>
+                    <li>
+                        <a class="main-navigation__link" href="news.html">Новости</a>
+                    </li>
+                    <li>
+                        <a class="main-navigation__link" href="price.html">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a class="main-navigation__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>  
+                <ul class="list user">
+                    <li>
+                        <a class="main-navigation__link user__link js-user__link" href="user.html">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="catalog-item-page container">
+            <h1 class="title catalog-item-page__title">Набор для путешествий «Baxter of California»</h1>
+            <ul class="list breadcrumbs">
+                <li>
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a class="breadcrumbs__link" href="#">Магазин</a>
+                </li>
+                <li>
+                    <a class="breadcrumbs__link" href="#">Средства для ухода</a>
+                </li>
+                <li>
+                    <a class="breadcrumbs__link--current">Набор для путешествий «Baxter of California»</a>
+                </li>
+            </ul>
+            <div class="catalog-item-page__wrapper">
+                <section class="item-gallery">
+                    <h2 class="visually-hidden">Фотографии товара</h2>
+                    <img class="item-gallery__photo item-gallery__main-photo" src="img/item-page-picture-big.jpg" width="460" height="498" alt="Фото всего набора">
+                    <ul class="list item-gallery__list">
+                        <li>
+                            <img class="item-gallery__photo" src="img/item-page-picture-small1.jpg" width="140" height="149" alt="Фото в анфас">
+                        </li>
+                        <li>
+                            <img class="item-gallery__photo" src="img/item-page-picture-small2.jpg" width="140" height="149" alt="Фото в профиль">
+                        </li>
+                        <li>
+                            <img class="item-gallery__photo" src="img/item-page-picture-small3.jpg" width="140" height="149" alt="Фото отдельной части">
+                        </li>
+                    </ul>
+                </section>
+                <section class="item-info">
+                    <h2 class="visually-hidden">Описание товара</h2>
+                    <div class="item-info__service-wrapper">
+                        <p class="paragraph">
+                            Есть в наличии
+                        </p>
+                        <p class="paragraph item-info__article">
+                            Артикул: Dexter-AE
+                        </p>
+                    </div>
+                    <p class="paragraph item-info__description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+                    <div class="item-info__buy-wrapper">
+                        <p class="paragraph item-info__price">2 900 ₽</p>
+                        <a class="button item-info__button" href="#">Купить</a>
+                    </div>
+                    <p class="paragraph item-info__set">В набор входят:</p>
+                    <ul class="list item-info__list">
+                        <li class="item-info__item">Средство для умывания (50мл)</li>
+                        <li class="item-info__item">Увлажняющий крем (50 мл)</li>
+                        <li class="item-info__item">Крем для бритья (50 мл)</li>
+                        <li class="item-info__item">Крем после бритья, шампунь (50 мл)</li>
+                        <li class="item-info__item">Удобная кожаная косметичка</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper catalog-item-page__footer container">
+                <div class="address">
+                    <p class="paragraph">
+                        Барбершоп «Бородинский»<br>
+                        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                        <a class="address__link" href="#">Как нас найти?</a><br>
+                        Телефон: +7 (495) 666-02-66
+                    </p>
+                </div>
+                <div class="social">
+                    <p class="paragraph social__paragraph">
+                        Давайте дружить!
+                    </p>
+                    <ul class="list social__list">
+                        <li>
+                            <a class="button social__button--vk" href="#" aria-label="ВКонтакте"></a>
+                        </li>
+                        <li>
+                            <a class="button social__button--facebook" href="#" aria-label="Фейсбук"></a>
+                        </li>
+                        <li>
+                            <a class="button social__button--instagram" href="#" aria-label="Инстаграм"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                     <p class="paragraph copyright__paragraph">
+                        Разработано:
+                    </p>
+                    <a class="button copyright__button" href="#">Borodinski</a>
+                </div>
+            </div>
+        </footer>
+        <div class="container">
+            <section class="modal modal-user js-modal-user">
+                <h2 class="title modal-user__title">Личный кабинет</h2>
+                <p class="paragraph modal-user__paragraph">
+                    Введите пожалуйста свой логин и пароль
+                </p>
+                <form class="js-modal-user__form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="modal-user__input modal-user__login js-modal-user__login" type="text" name="login" id="user-login" placeholder="Логин">
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="modal-user__input modal-user__password js-modal-user__password" type="password" name="password" id="user-password" placeholder="Пароль">
+                    <div class="modal-user__memory-wrapper">
+                        <input class="modal-user__input modal-user__checkbox visually-hidden" type="checkbox" name="remember" id="user-remember" checked>
+                        <label for="user-remember">Запомните меня</label>
+                        <a class="modal-user__restore" href="#">Я забыл пароль!</a>
+                    </div>
+                    <button class="button modal-user__button" type="submit">Войти</button>
+                </form>
+                <button class="modal__close js-modal__close" type="button" aria-label="Закрыть окно"></button>
+            </section>
+        </div>
+        <script src="js/modal-user.js"></script>
+    </body>
+</html>
