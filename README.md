@@ -1,4 +1,5 @@
 # Вёрстка сайта проекта Барбершоп
+https://benuelbertran.github.io/barbershop/
 
 ## Общие технические требования
 
